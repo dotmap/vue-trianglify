@@ -1,8 +1,8 @@
 {
   "name": "vue-trianglify",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "A Vue component for generating awesome polygonal art.",
-  "main": "src/Trianglify.vue",
+  "main": "index.js",
   "scripts": {
     "cm": "git-cz",
     "lint": "eslint --fix --ext .js,.vue src",
