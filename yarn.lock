@@ -6766,6 +6766,13 @@ vue-template-es2015-compiler@^1.6.0:
   version "1.6.0"
   resolved "https://registry.yarnpkg.com/vue-template-es2015-compiler/-/vue-template-es2015-compiler-1.6.0.tgz#dc42697133302ce3017524356a6c61b7b69b4a18"
 
+vue-trianglify@^0.0.6:
+  version "0.0.6"
+  resolved "https://registry.yarnpkg.com/vue-trianglify/-/vue-trianglify-0.0.6.tgz#116e81adc2bfe9bb134ecbeb51916e1f5ea535c7"
+  dependencies:
+    trianglify "^1.2.0"
+    vue "^2.5.3"
+
 vue@^2.5.3:
   version "2.5.3"
   resolved "https://registry.yarnpkg.com/vue/-/vue-2.5.3.tgz#e1a3b1f49b6e93e574ce040b95cbc873912fecc1"
