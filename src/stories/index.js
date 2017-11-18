@@ -1,6 +1,6 @@
 import { storiesOf } from '@storybook/vue'
 
-import Trianglify from './../Trianglify.vue'
+const Trianglify = require('./../Trianglify.js')
 
 storiesOf('trianglify', module)
   .add('Default Configuration', () => ({

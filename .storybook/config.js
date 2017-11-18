@@ -3,7 +3,7 @@ import { configure } from '@storybook/vue'
 import Vue from 'vue'
 
 // Import your custom components.
-import Trianglify from '../src/Trianglify.vue'
+const Trianglify = require('../src/Trianglify.js')
 
 // Register custom components.
 Vue.component('trianglify', Trianglify)
