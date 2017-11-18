@@ -1,6 +1,6 @@
 {
   "name": "vue-trianglify",
-  "version": "0.0.10",
+  "version": "1.0.0",
   "description": "A Vue component for generating awesome polygonal art.",
   "main": "main.js",
   "scripts": {
