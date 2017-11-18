@@ -1,12 +1,25 @@
-<template>
-  <div id="trianglify"></div>
-</template>
+const Trianglify = require('trianglify')
 
-<script>
-import Trianglify from 'trianglify'
-
-export default {
+module.exports = {
   name: 'trianglify',
+  render (h) {
+    const output = (ptn, type) => {
+      switch (type) {
+        case 'png':
+          return h('img', {
+            attrs: {
+              id: 'trianglify',
+              src: this.pattern.png()
+            }
+          })
+        case 'canvas':
+          throw new Error('Canvas output is not supported yet. Please try svg or png output instead')
+        default:
+          return h('div', { domProps: {innerHTML: `${ptn.svg().outerHTML}`} })
+      }
+    }
+    return output(this.pattern, this.type)
+  },
   props: [
     'type',
     'width',
@@ -36,21 +49,5 @@ export default {
         points: this.points || null
       })
     }
-  },
-  mounted () {
-    const output = (ptn, type) => {
-      switch (type) {
-        case 'png':
-          const png = document.createElement('img')
-          png.src = ptn.png()
-          return png
-        case 'canvas':
-          return ptn.canvas()
-        default:
-          return ptn.svg()
-      }
-    }
-    document.getElementById('trianglify').appendChild(output(this.pattern, this.type))
   }
 }
-</script>
